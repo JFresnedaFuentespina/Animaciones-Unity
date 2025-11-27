@@ -31,8 +31,19 @@ public class PlayerMover : MonoBehaviour
                 }
             }
         }
+
         float speed = agent.velocity.magnitude;
         animator.SetFloat("Velocity", speed);
-    }
 
+        // Parada estable sin orbitar
+        if (!agent.pathPending && agent.hasPath)
+        {
+            if (agent.remainingDistance <= agent.stoppingDistance)
+            {
+                agent.ResetPath();
+                agent.velocity = Vector3.zero;
+                animator.SetFloat("Velocity", 0f);
+            }
+        }
+    }
 }
