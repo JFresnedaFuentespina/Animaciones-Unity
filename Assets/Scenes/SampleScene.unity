@@ -693,7 +693,7 @@ PrefabInstance:
     - target: {fileID: 9572094, guid: 30cf93deff988e74e88a144bd2127c18, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: aa50173ce7a977643865728d584d5a48, type: 2}
+      objectReference: {fileID: 9100000, guid: 76e827bf141965f45b70538e90e736ae, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -965,7 +965,7 @@ GameObject:
   - component: {fileID: 1280938154}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
